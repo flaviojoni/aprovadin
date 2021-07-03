@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+:root {
+  --blue-color-l: #3783F4;
+  --purple-color: #2F195F;
+  --title-color: #0F1020;
+  --white: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--blue-color-l);
+  font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
+}
+
+.navbar {
+  min-height: 10vh;
+}
+
+/* TABLET E DESKTOP NAV */
+.tablet-desktop-nav {
+  position: absolute;
+  right: 0px;
+  height: 90vh;
+  top: 10vh;
+  background-color: var(--white);
+  width: 100%;
+  background-color: #3783F4;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%);
+  transition: transform 0.35s ease-in;
+}
+
+.links {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.links:first-child {
+  margin-top: 32px;
+}
+
+.links a {
+  margin-bottom: 48px;
+  text-decoration: none;
+  color: var(--white);
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  border-bottom: 1px solid var(--white);
+}
+
+.tablet-desktop-nav button {
+  width: 78px;
+  height: 32px;
+  display: block;
+  margin: 0 auto;
+  background-color: var(--white);
+  border-radius: 5px;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+/*-----------------*/
+
+
+.navbar img {
+  width: 130px;
+}
+
+.burguer {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.burguer h2 {
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.burguer-lines div {
+  width: 30px;
+  height: 4px;
+  background-color: var(--white);
+  margin: 5px;
+  border-radius: 3px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* JS STYLES */
+.tablet-desktop-nav-active {
+  transform: translateX(0%);
+}
