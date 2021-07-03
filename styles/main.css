@@ -35,7 +35,7 @@ body {
   display: flex;
   flex-direction: column;
   transform: translateX(100%);
-  transition: transform 0.35s ease-in;
+  transition: transform 0.4s ease-in;
 }
 
 .links {
@@ -96,6 +96,7 @@ body {
   background-color: var(--white);
   margin: 5px;
   border-radius: 3px;
+  transition: all 0.3s ease;
 }
 
 .flex {
@@ -107,4 +108,16 @@ body {
 /* JS STYLES */
 .tablet-desktop-nav-active {
   transform: translateX(0%);
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
 }

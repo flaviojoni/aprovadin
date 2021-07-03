@@ -4,6 +4,9 @@ const navSlide = () => {
 
   burguer.addEventListener('click', () => {
     nav.classList.toggle('tablet-desktop-nav-active');
+
+    //Burguer Animation
+    burguer.classList.toggle('toggle');
   })
 }
 
