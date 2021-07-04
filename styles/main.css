@@ -5,6 +5,7 @@
   --purple-color: #2F195F;
   --title-color: #0F1020;
   --white: #fff;
+  --gray: #F1F0F0;
 }
 
 * {
@@ -106,7 +107,7 @@ body {
 .main-section {
   background-image: url("../images/mobile-bg.svg");
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: bottom;
   padding-bottom: 42px;
 }
 
@@ -161,6 +162,48 @@ body {
   background-color: var(--purple-color);
 }
 
+/* SEÇÃO DE DESCRIÇÕES */
+.des-section {
+  background-color: var(--gray);
+  margin-top: -1px;
+}
+
+.grid-des h2 {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+  margin-top: 64px;
+  margin-bottom: 8px;
+}
+
+.grid-des h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.grid-des p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.grid-des img {
+  width: 278px;
+  height: 270px;
+  display: block;
+  margin: 0 auto;
+}
+
+.bottom-cadastre {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.bottom-cadastre a {
+  text-decoration: none;
+}
+
 /* UTILIDADES */
 .flex {
   display: flex;
@@ -170,6 +213,14 @@ body {
 
 .t-center {
   text-align: center;
+}
+
+.grid-des {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  margin-right: 16px;
+  margin-left: 16px;
 }
 
 
