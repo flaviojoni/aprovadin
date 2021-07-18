@@ -14,13 +14,11 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
   background-color: var(--blue-color-l);
   font-family: 'Raleway', sans-serif;
-}
-
-.main {
   overflow-x: hidden;
+  position: relative;
 }
 
 .navbar {
