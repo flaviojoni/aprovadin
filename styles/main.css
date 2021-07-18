@@ -25,6 +25,14 @@ body {
 }
 
 /* TABLET E DESKTOP NAV */
+.desktop-nav {
+  display: none;
+}
+
+.login-desktop {
+  display: none;
+}
+
 .tablet-desktop-nav {
   position: absolute;
   right: 0px;
@@ -374,6 +382,14 @@ body {
   }
 
   /* TABLET E DESKTOP NAV */
+  .desktop-nav {
+    display: block;
+  }
+
+  .login-btn {
+    display: block;
+  }
+
   .flex-navbar {
     display: flex;
     align-items: center;
