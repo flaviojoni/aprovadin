@@ -17,6 +17,9 @@
 body {
   background-color: var(--blue-color-l);
   font-family: 'Raleway', sans-serif;
+}
+
+.main {
   overflow-x: hidden;
 }
 
@@ -386,7 +389,7 @@ body {
     display: block;
   }
 
-  .login-btn {
+  .login-desktop {
     display: block;
   }
 
