@@ -303,10 +303,12 @@ body {
   /*Seção principal*/
   .main-section {
     background-image: url("../images/tablet-bg.svg");
+    background-repeat: repeat-x;
     display: grid;
     grid-template-areas: "text image";
     grid-template-columns: repeat(2, 1fr);
-    height: 100vh;
+    padding-bottom: 0px;
+    height: 50vh;
   }
 
   .textual {
@@ -366,4 +368,46 @@ body {
   .tablet-img {
     display: none;
   }
+
+  .burguer {
+    display: none;
+  }
+
+  /* TABLET E DESKTOP NAV */
+  .flex-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tablet-desktop-nav {
+    display: none;
+  }
+
+  .links {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .links:first-child {
+    margin-top: 32px;
+  }
+
+  .links a {
+    margin-right: 50px;
+    border-bottom: 1px solid var(--blue-color-l);
+    margin-bottom: 48px;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 16px;
+    border-bottom: 1px solid var(--blue-color-l);
+  }
+
+  .links a:hover {
+    border-bottom: 1px solid var(--white);
+  }
+  /*-----------------*/
 }
