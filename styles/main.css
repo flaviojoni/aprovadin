@@ -14,7 +14,7 @@
   box-sizing: border-box;
 }
 
-html, body {
+html, body { /* Faz com que o overlow funcione em mobile (overflow, relative, em html e body)*/
   background-color: var(--blue-color-l);
   font-family: 'Raleway', sans-serif;
   overflow-x: hidden;
@@ -26,10 +26,6 @@ html, body {
 }
 
 /* TABLET E DESKTOP NAV */
-.desktop-nav {
-  display: none;
-}
-
 .login-desktop {
   display: none;
 }
@@ -37,7 +33,7 @@ html, body {
 .tablet-desktop-nav {
   position: absolute;
   right: 0px;
-  height: 95vh;
+  height: 95%;
   top: 10vh;
   background-color: var(--white);
   width: 100%;
@@ -75,7 +71,6 @@ html, body {
   width: 132px;
   height: 42px;
   font-size: 16px;
-  display: block;
   margin: 0 auto;
   background-color: var(--white);
   border-radius: 5px;
@@ -160,10 +155,16 @@ html, body {
 #descubra {
   width: 230px;
   margin-bottom: 16px;
+  transition: background-color 0.3s ease-out;
 }
 
 #cadastre {
   width: 210px;
+  transition: background-color 0.3s ease-out;
+}
+
+#descubra:hover, #cadastre:hover {
+  background-color: #5532a0;
 }
 
 .main-sec-links a:hover, .main-sec-links:visited {
@@ -364,7 +365,8 @@ html, body {
   /* SEÇÃO PRINCIPAL */
   .main-section {
     background-image: url("../images/desktop-bg.png");
-    height: 70vh;
+    height: 100%;
+    padding-top: 42px;
   }
 
   .mobile-img {
@@ -372,6 +374,15 @@ html, body {
     width: 300px;
     align-self: center;
     justify-self: center;
+  }
+
+  .textual {
+    margin-left: 200px;
+  }
+
+  .main-section img {
+    margin-right: 200px;
+    margin-top: 50px;
   }
 
   .tablet-img {
@@ -383,21 +394,32 @@ html, body {
   }
 
   /* TABLET E DESKTOP NAV */
-  .desktop-nav {
-    display: block;
+  .navbar {
+    padding-top: 2rem;
+  }
+  
+  .tablet-desktop-nav {
+    all: revert;
+    display: flex;
   }
 
   .login-desktop {
     display: block;
+    background-color: var(--white);
+    border: none;
+    width: 108px;
+    height: 32px;
+    border-radius: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: box-shadow .3s ease-out;
   }
 
-  .flex-navbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .login-desktop:hover {
+    box-shadow: 2px 2px 12px var(--purple-color);
   }
 
-  .tablet-desktop-nav {
+  .login-btn {
     display: none;
   }
 
@@ -410,13 +432,13 @@ html, body {
   }
 
   .links:first-child {
-    margin-top: 32px;
+    margin-top: 0;
   }
 
   .links a {
     margin-right: 50px;
     border-bottom: 1px solid var(--blue-color-l);
-    margin-bottom: 48px;
+    margin-bottom: 0;
     text-decoration: none;
     color: var(--white);
     font-size: 16px;
@@ -427,4 +449,20 @@ html, body {
     border-bottom: 1px solid var(--white);
   }
   /*-----------------*/
+
+  .des-text {
+    text-align: center;
+  }
+  
+  .grid-des {
+    width: 70%;
+    margin-right: 0px;
+  }
+
+  .des-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+  }
 }
